@@ -1,13 +1,13 @@
 # LOBSTER CSV
 
-The function is usefull if you want to use the CSV files from the [LOBSTER website](https://lobsterdata.com/). The original files do not have any label for the columns, this function labels the dataframe using Pandas. The message file is straing foward to label, the order book it can be problematic because we have different CSV files to choose from depending on the order book depth (level 10,50 and so on). The function can take care of that automatically.
+The function is useful if you want to use the CSV files from the [LOBSTER website](https://lobsterdata.com/). The original files do not have any labels for the columns, this function labels the dataframe using Pandas. The message file is straightforward to label, but the order book can be problematic because we have different CSV files to choose from depending on the order book depth (level 10,50 and so on). The function can take care of that automatically.
 
 ## Arguments
 
 + format_time: bool
   The format_time (defalult=False) if True adds a new column with time in HH:MM:SS.000000 format.
 + format_price: bool
-  The format_price (defalult=False) if True shows all the prices in the "normal" format. For example if a Bid price is $ 95.43 the LOBSTER file shows 9543000, with format_price=True the price becomes a numpy.float64 95.43.
+  The format_price (defalult=False) if True shows all the prices in the "normal" format. For example, if a Bid price is $ 95.43 the LOBSTER file shows 9543000, with format_price=True the price becomes a numpy.float64 95.43.
 
 ---
 
